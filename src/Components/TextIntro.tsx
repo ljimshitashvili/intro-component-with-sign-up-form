@@ -19,6 +19,7 @@ const Container = styled.div`
   gap: 16px;
   align-items: center;
   max-width: 327px;
+  margin-bottom: 40px;
 
   h1 {
     font-weight: 700;

@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import scheme from "./Scheme";
 import FormData from "./Types";
+import Try from "./Try";
 
 export default function SignUp() {
   const {
@@ -16,6 +17,8 @@ export default function SignUp() {
 
   return (
     <Container>
+      <Try />
+
       <Input onSubmit={handleSubmit(onSubmit)}>
         <label>
           <input
@@ -105,13 +108,13 @@ const Input = styled.form`
       }
     }
     p {
-      font-size: 14px;
-      line-height: 26px;
+      font-size: 11px;
+      line-height: 16px;
       text-align: right;
       color: #ff7979;
       font-style: italic;
       position: absolute;
-      bottom: -20px;
+      bottom: -13px;
       text-align: end;
       width: 100%;
     }
@@ -129,12 +132,19 @@ const Input = styled.form`
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
-
     color: #ffffff;
   }
 
   @media (min-width: 1024px) {
     gap: 20px;
     padding: 40px;
+
+    label {
+      position: unset;
+
+      p {
+        position: unset;
+      }
+    }
   }
 `;
