@@ -3,8 +3,8 @@ import { GlobalStyle } from "./GlobalStyles";
 
 import bgMob from "./assets/bg-intro-mobile.png";
 
-import TextInfo from "./TextIntro";
-import SignUp from "./SignUp";
+import TextInfo from "./Components/TextIntro";
+import SignUp from "./Components/SignUp";
 
 function App() {
   return (
@@ -29,6 +29,7 @@ const Container = styled.div`
   align-items: center;
   gap: 64px;
   justify-content: center;
+  padding: 88px 0;
 
   @media (min-width: 1024px) {
     flex-direction: row;

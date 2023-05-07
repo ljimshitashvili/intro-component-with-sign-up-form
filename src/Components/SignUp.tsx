@@ -45,7 +45,7 @@ export default function SignUp() {
           />
           {errors.password && <p>{errors.password.message}</p>}
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit">claim your free trial</button>
       </Input>
     </Container>
   );
@@ -83,6 +83,12 @@ const Input = styled.form`
       border: 1px solid #dedede;
       border-radius: 5px;
       padding: 0 19.4px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.25px;
+      color: #3d3b48;
+      mix-blend-mode: normal;
 
       :focus {
         outline: 1px solid #5e54a4;
@@ -109,6 +115,22 @@ const Input = styled.form`
       text-align: end;
       width: 100%;
     }
+  }
+  button {
+    background: #38cc8b;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    border: none;
+    height: 56px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #ffffff;
   }
 
   @media (min-width: 1024px) {
