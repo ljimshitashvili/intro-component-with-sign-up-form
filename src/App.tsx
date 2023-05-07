@@ -4,12 +4,14 @@ import { GlobalStyle } from "./GlobalStyles";
 import bgMob from "./assets/bg-intro-mobile.png";
 
 import TextInfo from "./TextIntro";
+import SignUp from "./SignUp";
 
 function App() {
   return (
     <Container>
       <GlobalStyle />
       <TextInfo />
+      <SignUp />
     </Container>
   );
 }
