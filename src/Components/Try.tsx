@@ -3,7 +3,9 @@ import styled from "styled-components";
 export default function Try() {
   return (
     <Container>
-      <p>Try it free 7 days then $20/mo. thereafter</p>
+      <p>
+        Try it free 7 days <span>then $20/mo. thereafter</span>
+      </p>
     </Container>
   );
 }
@@ -27,6 +29,10 @@ const Container = styled.div`
     letter-spacing: 0.267857px;
     color: #ffffff;
     max-width: 195px;
+
+    span {
+      font-weight: 500;
+    }
   }
 
   @media (min-width: 1024px) {

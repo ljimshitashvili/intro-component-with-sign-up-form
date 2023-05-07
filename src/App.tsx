@@ -33,6 +33,7 @@ const Container = styled.div`
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    gap: 45px;
+    gap: unset;
+    justify-content: space-around;
   }
 `;

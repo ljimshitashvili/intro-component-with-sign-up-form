@@ -48,7 +48,13 @@ export default function SignUp() {
           />
           {errors.password && <p>{errors.password.message}</p>}
         </label>
-        <button type="submit">claim your free trial</button>
+        <div>
+          <button type="submit">claim your free trial</button>
+          <h2>
+            By clicking the button, you are agreeing to our{" "}
+            <a href="">Terms and Services</a>
+          </h2>
+        </div>
       </Input>
     </Container>
   );
@@ -119,20 +125,44 @@ const Input = styled.form`
       width: 100%;
     }
   }
-  button {
-    background: #38cc8b;
-    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-    border-radius: 5px;
-    border: none;
-    height: 56px;
-    font-family: "Poppins";
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1px;
-    color: #ffffff;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+
+    button {
+      background: #38cc8b;
+      box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+      border-radius: 5px;
+      border: none;
+      height: 56px;
+      font-family: "Poppins";
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 26px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #ffffff;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 26px;
+      text-align: center;
+      color: #bab7d4;
+
+      a {
+        font-weight: 700;
+        color: #ff7979;
+        text-decoration: none;
+      }
+    }
   }
 
   @media (min-width: 1024px) {
